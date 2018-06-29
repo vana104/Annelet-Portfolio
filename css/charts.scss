@@ -1,0 +1,144 @@
+@import "compass/css3";
+
+$gray: #cacaca;
+$green: #006341;
+$time: 2s;
+$multiplier: 5;
+$by: 100/$multiplier;
+
+.chart {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  font-size: 24px;
+  font-family: "Lato", sans-serif;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0px 10px $gray;
+  overflow: hidden;
+  
+  &:before {
+    content: attr(data-percentage)'%';
+    display: block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    border-radius: 50%;
+  }
+}
+
+//make it count
+/* 
+.percentage {
+  position: relative;
+  top: 16px;
+  height: 13px;
+  overflow: hidden;
+  
+  &:before,
+  &:after {
+    position: absolute;
+    white-space: pre;
+  }
+  
+  &::before {
+    content: "0 \a 1 \a 2 \a 3 \a 4 \a 5 \a 6 \a 7 \a 8 \a 9";
+    left: 16px;
+    animation: tens $time 1 steps(10, end);
+  }
+
+  &::after {
+    content: "0 \a 1 \a 2 \a 3 \a 4 \a 5 \a 6 \a 7 \a 8 \a 9";
+    right: 16px;
+    animation: ones $time/10 6 steps(10, end);
+  }
+}
+*/
+
+@keyframes tens {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-160px); }
+}
+
+@keyframes ones {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-160px); }
+}
+
+.completed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    box-shadow: inset 0 0 0px 10px $green;
+    border-radius: 50%;
+  }
+  
+  &:before { clip: rect(0 100px 100px 50px); }
+  &:after { clip: rect(0 50px 100px 0); }
+}
+
+@for $i from 0 through $by {
+   $value: $i * $multiplier;
+  
+  [data-percentage="#{$value}"] .completed {
+    @if $value <= 50 {
+      clip: rect(0 100px 100px 50px);
+    } @else {
+      clip: rect(0 100px 100px 0px);
+    }
+    
+    &.active {
+      @if $value <= 50 {
+        &:before { 
+          transform: rotate(-180 + ($value/100 * 360deg));
+          animation: first-#{$value} $time 1 ease-out; 
+        }
+      } @else {
+        animation: mask-#{$value} $time linear;
+        &:before { 
+          transform: rotate(0deg);
+          animation: first-#{$value} $time 1 linear; 
+        }
+        &:after { 
+          transform: rotate(-360 + ($value/100 * 360deg));
+          animation: second-#{$value} $time 1 ease-out; 
+        }
+      }
+    }
+  }
+
+  @keyframes mask-#{$value} {
+    0%, 50% { clip: rect(0 100px 100px 50px); }
+    50.01%, 100% { clip: rect(0 100px 100px 0px); }
+  }
+  
+  @if $value <= 50 {
+    @keyframes first-#{$value} {
+      0% { transform: rotate(-180deg); }
+      50%, 100% { transform: rotate(-180 + ($value/100 * 360deg)); }
+    }
+  } @else {
+    @keyframes first-#{$value} {
+      0% { transform: rotate(-180deg); }
+      50%, 100% { transform: rotate(0deg); }
+    }
+    
+    @keyframes second-#{$value} {
+      0%, 50% { transform: rotate(0deg); }
+      50.01% { transform: rotate(-180deg); } 
+      100% { transform: rotate(-360 + ($value/100 * 360deg)); }
+    }
+  }
+}

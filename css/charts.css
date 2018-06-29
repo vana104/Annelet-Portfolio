@@ -1,0 +1,57 @@
+section {
+  width: 100%;
+  position: realtive;
+  display: block; }
+
+.bg-alpha {
+  background-color: white;
+  text-align: center; }
+
+section {
+  display: table;
+  width: 100%; }
+  section > div {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3em 2em 1em;
+    margin: 0 auto; }
+  section p.program {
+    margin-top: 15px; }
+
+.sect-content {
+  padding: 2em; }
+
+.graph-donut {
+  position: relative;
+  display: inline-block;
+  width: 10em;
+  height: 10em;
+  margin-bottom: 3em;
+  text-align: center; }
+
+.graph-donut canvas {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.percent {
+  display: inline-block;
+  font-size: 21px;
+  color: black;
+  line-height: 152px;
+  z-index: 2;
+  font-family: "Open Sans Condensed", sans-serif; }
+  .percent:after {
+    content: '%';
+    margin-left: 0.1em;
+    font-size: .8em; }
+  .percent.no-percent:after {
+    content: ''; }
+
+@media only screen and (max-width: 768px) {
+  section {
+    display: table;
+    width: 75%;
+    margin: 0 auto; } }
+
+/*# sourceMappingURL=charts.css.map */
