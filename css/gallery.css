@@ -218,15 +218,28 @@ iframe {
     margin-left: 50px; }
 
   .port.item_open {
-    height: auto !important; } }
+    height: auto !important; } 
+
+    .close {
+  right: 6%;
+}
 @media only screen and (max-width: 425px) {
+
+  .port > * {
+  opacity: 1;
+  -webkit-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+      display: block;
+    justify-content: center;
+    align-items: center; }
+
   .gallery ul li {
     width: 100% !important;
     margin-left: 35px !important;
     margin: 10px 0.87719%; }
 
   .port .description {
-    width: 95% !important;
+    width: 100% !important;
     text-align: center; }
 
   .pdf {
@@ -237,17 +250,31 @@ iframe {
 
   .gallery ul {
     padding-top: 0px;
-    position: relative; } }
+    position: relative; }
+
+    .close {
+  right: 6%;
+}
+
+ }
 @media only screen and (max-width: 375px) {
   .gallery ul li {
     width: 100% !important;
     margin-left: 15px !important;
-    margin: 10px 0.87719%; } }
+    margin: 10px 0.87719%; }
+
+        .close {
+  right: 6%;
+} }
 @media only screen and (max-width: 320px) {
   .gallery ul li {
     width: 100.24561% !important;
     margin-left: 0px !important;
     margin: 10px 0.87719%;
-    background-color: white; } }
+    background-color: white; }
+
+        .close {
+  right: 6%;
+} }
 
 /*# sourceMappingURL=gallery.css.map */

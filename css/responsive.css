@@ -166,17 +166,13 @@ footer {
   cursor: pointer;
 }
 }
-/*@media only screen and (max-device-width : 1024px){
-/* Styles 
+@media only screen and (max-device-width : 1024px){
 
-}
-/* Styles 
 .about {
 	height: auto;
 	padding-top: 1%
 }
-
-/* Styles 
-
+.close {
+	right: 1.5%;
 }
 }
