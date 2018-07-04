@@ -1,0 +1,182 @@
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+/*Banner*/
+
+#logo {
+	    width: 50%;
+    margin-bottom: 5%;
+}
+.typewriter {
+	width: 85%;
+}
+
+
+.typewriter h1 {
+    font-size: 15px;
+
+}
+
+
+.line {
+    width: 45%;
+    margin-top: 10%;
+
+}
+
+.tri {
+    width: 3%;
+    margin-top: 4%;
+}
+
+.about {
+height: auto;
+width: 100%;
+
+}
+
+p.about_text {
+	margin-top: 4%;
+	margin-bottom: 5%;
+}
+/* CV */
+
+.cv {
+	margin-top: 8%;
+    display: block;
+
+}
+
+#education {
+	width: 85%;
+	margin: 0 auto;
+}
+
+
+#experience {
+    width: 80%;
+    padding-top: 10%;
+    margin: 0 auto;
+    
+}
+
+
+#skills {
+	width: 90%;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+
+
+/*contact*/
+
+.contact {
+	display: block;
+	    height: 375px;
+}
+
+
+.contact_text {
+	width: 100%;
+	padding-top: 8%;
+}
+
+
+.form {
+	width: 100%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.form_field {
+	margin: 10px;
+	width: 300px;
+	height: 30px;
+	
+}
+
+.form_message {
+	margin: 10px;
+	width: 300px;
+	height: 100px
+}
+
+footer {
+	margin-top: 0;
+	height: 125px;
+}
+
+.social {
+  width: 10%;
+  display: inline-block;
+  cursor: pointer;
+}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1023px) {
+
+.about {
+
+    text-align: center;
+    width: 80%;
+ 
+
+}
+
+.line {
+	width: 30%;
+	margin-top: 6%;
+}
+
+.line_bottom {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.tri {
+	width: 2%;
+}
+.cv {
+	margin-top: 6%;
+}
+
+#skills {
+    width: 28%;
+}
+
+ul.skill {
+	padding: 0;
+}
+
+ul.circless {
+	padding: 0;
+}
+footer {
+	margin-top: 0;
+	height: 125px;
+}
+
+.social {
+  width: 5%;
+  display: inline-block;
+  cursor: pointer;
+}
+}
+/*@media only screen and (max-device-width : 1024px){
+/* Styles 
+
+}
+/* Styles 
+.about {
+	height: auto;
+	padding-top: 1%
+}
+
+/* Styles 
+
+}
+}
