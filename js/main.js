@@ -54,11 +54,12 @@ $(document).ready(function(){
      return false;
  });
 
- $(".gallery ul li a").click(function() {
+/* $(".gallery ul li a").click(function() {
      $('html, body').animate({
          scrollTop: parseInt($("#top").offset().top)
      }, 400);
  });
+ */
 
 // clicktoreveal
 $('.cv').hide();
@@ -103,4 +104,6 @@ $('#home').on('click',function(){
         scrollTop: $( "#home_banner").offset().top
       }, 2000 );
 });
+
+//loader
 
