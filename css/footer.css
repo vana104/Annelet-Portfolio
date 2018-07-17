@@ -10,17 +10,10 @@ footer {
   opacity: 1; 
 }
 
-.social {
-  width: 2.3%;
-  display: inline-block;
-  cursor: pointer;
-}
 
 
-.social:hover {
-      background-color: #A0787C;
-      border-radius: 100%; 
-  }
+
+
 
 footer .footer_reg {
     text-transform: uppercase;

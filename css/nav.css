@@ -39,8 +39,9 @@
 
 nav {
   float: right;
-  width: 80%;
+  width: 95%;
   margin-top: 15px }
+  
   @media only screen and (max-width: 768px) {
     nav {
       width: 100%; } }

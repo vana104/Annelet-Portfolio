@@ -1,6 +1,5 @@
 @import url(nav.css);
 @import url(footer.css);
-@import url(flip_cards.css);
 @import url(buttons.css);
 @import url(gallery.css);
 @import url(banner.css);
@@ -271,7 +270,7 @@ hr {
 	display: inline-flex;
 	justify-content: center;
 	height: 500px;
-
+	padding: 9%;
 }
 
 .contact_text {
@@ -286,25 +285,14 @@ hr {
 
 .form {
 	width: 49%;
-	text-align: center;
+	
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	
 }
 
-.form_field {
-	margin: 10px;
-	width: 300px;
-	height: 30px;
-	
-}
 
-.form_message {
-	margin: 10px;
-	width: 300px;
-	height: 100px
-}
 
 .line {
     width: 15%;
@@ -325,3 +313,22 @@ hr {
 	margin-top: 1%;
 }
 
+.social_icons {
+	text-align: left;
+	list-style: none;
+}
+
+.social {
+  width: 8%;
+  display: inline-block;
+  cursor: pointer;
+}
+.social:hover {
+      background-color: #BC8F8F;
+      border-radius: 100%; 
+  }
+
+.contactText {
+	display: inline-block;
+	margin-left: 6%;
+}
