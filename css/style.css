@@ -95,11 +95,10 @@ h1#name_intro {
 }
 
 .about {
-height: 350px;
+height: auto;
     text-align: center;
     width: 57%;
-    padding-top: 2%;
-    margin: 0 auto;
+       margin: 0 auto;
    
     
 }
@@ -154,8 +153,8 @@ li.education {
 
 #experience {
 	width: 20%;
-	margin-left:5%;
-	margin-right: 5%;
+	margin-left:7%;
+	margin-right: 7%;
 }
 
 p.experience {
@@ -170,6 +169,7 @@ ul.skill {
 	list-style: none;
 	text-align: left;
 	display: inline-block;
+	padding: 0;
 
 }
 
@@ -236,8 +236,15 @@ p.about_text {
     display: flex;
     justify-content: center;
     background-color: #fafafa;
-    padding-bottom: 3%;
-}
+   }
+
+   #cv_print {
+   	    padding: 0;
+    display: block;
+    margin: 0;
+    padding-bottom: 2%;
+
+   }
 
 .work {
 	height: auto;
