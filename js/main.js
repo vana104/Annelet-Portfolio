@@ -105,5 +105,5 @@ $('#home').on('click',function(){
       }, 2000 );
 });
 
-//loader
+//scrollGallery
 
