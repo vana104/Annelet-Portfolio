@@ -171,6 +171,12 @@ ul.circless {
 footer {
 	margin-top: 0;
 	height: auto;
+	padding-bottom: 15px;
+}
+
+.contact_text {
+    width: 40%;
+    text-align: center;
 }
 
 .social {

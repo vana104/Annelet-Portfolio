@@ -95,27 +95,34 @@ $(document).ready(function(){
 $('#about').on('click',function(){
  $( 'html, body' ).animate( {
         scrollTop: $( "#about_scroll").offset().top
-      }, 2000 );
+      }, 'slow' );
 });
 
 $('#work').on('click',function(){
  $( 'html, body' ).animate( {
         scrollTop: $( ".work").offset().top
-      }, 2000 );
+      }, 'slow' );
 });
 
 $('#contact').on('click',function(){
  $( 'html, body' ).animate( {
         scrollTop: $( ".contact").offset().top
-      }, 2000 );
+      }, 'slow' );
 });
 
 $('#home').on('click',function(){
  $( 'html, body' ).animate( {
         scrollTop: $( "#home_banner").offset().top
+      }, 'slow' );
+});
+
+//
+
+$('a.image').on('click',function(){
+ $( 'html, body' ).animate( {
+        scrollTop: $( ".close").offset().top
       }, 2000 );
 });
 
-//cv btton change
 
 
