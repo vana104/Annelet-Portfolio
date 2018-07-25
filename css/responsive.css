@@ -8,13 +8,10 @@
 	    width: 50%;
     margin-bottom: 5%;
 }
-.typewriter {
-	width: 85%;
-}
 
 
 .typewriter h1 {
-    font-size: 15px;
+    font-size: 13px;
 
 }
 
@@ -102,14 +99,18 @@ ul.education {
 
 
 footer {
-	margin-top: 0;
-	height: 125px;
+	padding-bottom: 22px;
+	height: auto;
 }
 
 .social {
   width: 10%;
   display: inline-block;
   cursor: pointer;
+}
+.social_footer {
+  width: 8%;
+  margin: 5%;
 }
 }
 
@@ -122,9 +123,7 @@ footer {
  
 
 }
-.typewriter {
-	width: 40%;
-}
+
 
 .line {
 	width: 30%;
@@ -171,13 +170,17 @@ ul.circless {
 }
 footer {
 	margin-top: 0;
-	height: 125px;
+	height: auto;
 }
 
 .social {
   width: 5%;
   display: inline-block;
   cursor: pointer;
+}
+.social_footer {
+  width: 4%;
+  margin: 2%;
 }
 }
 @media only screen and (max-device-width : 1024px){
@@ -200,6 +203,6 @@ p.about_text {
 }
 
 footer {
-	height: 85px;
+	height: auto;
 }
 }

@@ -35,8 +35,8 @@ h1#name_intro {
 	display: flex;
     justify-content: center;
     align-items: center;
-    width: 22%;
-    margin: 0 auto;
+       margin: 0 auto;
+       width: fit-content;
 }
 
 .typewriter h1 {
@@ -53,7 +53,6 @@ h1#name_intro {
     font-size: 20px;
 
 }
-
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
@@ -228,6 +227,7 @@ p.about_text {
 
 }
 
+
 .cv {
     height: auto;
     text-align: center;
@@ -281,24 +281,27 @@ hr {
 }
 
 .contact_text {
-	width: 49%;
-	
+	width: 25%;
 	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
-
+.contactText {
+	display: inline-block;
+	text-align: center;
+	width: 45%;
+	
+}
 
 .form {
-	width: 49%;
+	width: 40%;
 	
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	
 }
-
+.profile_picture {
+	width: 47%;
+}
 
 
 .line {
@@ -335,7 +338,3 @@ hr {
       border-radius: 100%; 
   }
 
-.contactText {
-	display: inline-block;
-	margin-left: 6%;
-}

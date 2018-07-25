@@ -70,6 +70,17 @@ $(document).ready(function(){
     });
 });
 
+//Text change
+$("#button_cv").click(function() { 
+    if ($(this).text() == "View CV") { 
+        $(this).text("Collapse CV"); 
+    } else { 
+        $(this).text("View CV"); 
+    }; 
+});
+
+
+
 // clicktoreveal
 $('#hide').hide();
 
@@ -105,5 +116,6 @@ $('#home').on('click',function(){
       }, 2000 );
 });
 
-//scrollGallery
+//cv btton change
+
 
